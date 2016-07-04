@@ -33,7 +33,7 @@ func editHandler(w http.ResponseWriter, r *http.Request){
   if err != nil {
       p  =  &Page{Title: title}
    }
-  t, _ := template.ParseFiles("static/edit.html")
+  t, _ := template.ParseFiles("static/edit.html");
   t.Execute(w,p)
 
 }
